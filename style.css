@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: #3252d3;
+    --primary-color: #fff;
+    --sec-color: #EFE2BA;
+    --blue-color: #4056a1;
+    --sec-sec-color: #D79922;
+}
+
+body {
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg-primary);
+    color: white;
+    padding: 2.5rem 3rem;
+    font-size: 20px;
+}
+
+.nav{
+    background: url(../images/bg-desktop-dark.jpg);
+    max-height: 40vh;
+    margin-bottom: 8rem;
+}
+.header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+}
+
+.search-input select {
+    padding: 8px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.main{
+    width: 90%;
+    margin: 10px auto;
+    overflow-y: hidden;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+    line-height: 1.5;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.content-main {
+    display: flex;
+    gap: 2rem; 
+    padding: 20px;
+}
+
+.posts,
+.comments {
+    flex: 1;
+}
+
+.posts h3,
+.comments h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.posts-content,
+.comments-content {
+    /* border: 1px solid var(--sec-color); */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.comment-bottom{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.post-img,
+.comment-img {
+    width: 20%;
+}
+
+.post-description,
+.comment-description {
+    flex: 1;
+    padding-left: 10px;
+}
+.comment-description {
+    flex: 1;
+    padding-left: 10px;
+}
+.post-title,
+.comment-title {
+    display: flex;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.comment-description p,
+.post-description p {
+    margin-top: 10px;
+    color: gray;
+}
+
+.content-bottom,
+.commnent-bottom {
+    display: flex;
+    gap: 4rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 10px;
+}
+.comment-icon,
+.twitt-icon,
+.like-icon {
+    display: flex;
+    align-items: center;
+}
+.comment-icon img,
+.twitt-icon img,
+.like-icon img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.comment-icon p,
+.twitt-icon p,
+.like-icon p {
+    color: gray;
+}
